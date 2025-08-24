@@ -221,48 +221,65 @@ export default function HomePage() {
           </div>
 
           {/* Modalities */}
-          <Card className="mt-16 bg-gray-50 animate-fade-in-up">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 text-center mb-8">
+          <div className="mt-16 animate-fade-in-up">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
                 Modalités d'intervention
               </h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center hover-scale animate-fade-in-up">
-                  <div className="w-12 h-12 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center animate-float">
-                    <Building className="text-white" />
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Nous nous adaptons à vos besoins avec des solutions flexibles
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="group relative overflow-hidden bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift animate-fade-in-up">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -translate-y-12 translate-x-12 group-hover:scale-150 transition-transform duration-700"></div>
+                <CardContent className="relative p-8 text-center z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl mx-auto mb-6 flex items-center justify-center animate-float shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Building className="text-white text-2xl" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors duration-300">
                     Au cabinet
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 leading-relaxed">
                     Consultations dans notre environnement adapté
                   </p>
-                </div>
-                <div className="text-center hover-scale animate-fade-in-up animation-delay-200">
-                  <div className="w-12 h-12 bg-accent rounded-full mx-auto mb-4 flex items-center justify-center animate-float animation-delay-400">
-                    <Home className="text-white" />
+                </CardContent>
+              </Card>
+              
+              <Card className="group relative overflow-hidden bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift animate-fade-in-up animation-delay-200">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 right-0 w-24 h-24 bg-accent/5 rounded-full -translate-y-12 translate-x-12 group-hover:scale-150 transition-transform duration-700"></div>
+                <CardContent className="relative p-8 text-center z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-2xl mx-auto mb-6 flex items-center justify-center animate-float animation-delay-400 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Home className="text-white text-2xl" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-accent transition-colors duration-300">
                     À domicile
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 leading-relaxed">
                     Interventions dans votre environnement quotidien
                   </p>
-                </div>
-                <div className="text-center hover-scale animate-fade-in-up animation-delay-400">
-                  <div className="w-12 h-12 bg-secondary rounded-full mx-auto mb-4 flex items-center justify-center animate-float animation-delay-800">
-                    <Video className="text-white" />
+                </CardContent>
+              </Card>
+              
+              <Card className="group relative overflow-hidden bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift animate-fade-in-up animation-delay-400">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute top-0 right-0 w-24 h-24 bg-secondary/5 rounded-full -translate-y-12 translate-x-12 group-hover:scale-150 transition-transform duration-700"></div>
+                <CardContent className="relative p-8 text-center z-10">
+                  <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl mx-auto mb-6 flex items-center justify-center animate-float animation-delay-800 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <Video className="text-white text-2xl" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-secondary transition-colors duration-300">
                     Téléconsultation
                   </h4>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 leading-relaxed">
                     Suivi à distance selon vos besoins
                   </p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
