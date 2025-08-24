@@ -109,34 +109,36 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Children Services */}
-            <Card className="bg-gradient-to-br from-accent/10 to-accent/5 hover:shadow-lg transition-all hover-lift animate-fade-in-up">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mb-6 animate-float">
+            <Card className="group relative overflow-hidden bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift animate-fade-in-up">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+              <CardContent className="relative p-8 z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center mb-6 animate-float shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <Users className="text-white text-2xl" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-accent transition-colors duration-300">
                   Enfants
                 </h3>
                 <ul className="space-y-2 text-gray-600 mb-6">
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-accent mr-2" />
+                    <CheckCircle size={16} className="text-accent mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Développement moteur
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-accent mr-2" />
+                    <CheckCircle size={16} className="text-accent mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Troubles sensoriels
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-accent mr-2" />
+                    <CheckCircle size={16} className="text-accent mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Graphomotricité
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-accent mr-2" />
+                    <CheckCircle size={16} className="text-accent mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Troubles alimentaires
                   </li>
                 </ul>
                 <Link href="/services">
-                  <a className="text-accent font-medium hover:underline">
+                  <a className="inline-flex items-center text-accent font-semibold hover:text-accent/80 transition-colors duration-200 group-hover:translate-x-1">
                     En savoir plus →
                   </a>
                 </Link>
@@ -144,34 +146,36 @@ export default function HomePage() {
             </Card>
 
             {/* Adult Services */}
-            <Card className="bg-gradient-to-br from-primary/10 to-primary/5 hover:shadow-lg transition-all hover-lift animate-fade-in-up animation-delay-200">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 animate-float animation-delay-400">
+            <Card className="group relative overflow-hidden bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift animate-fade-in-up animation-delay-200">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+              <CardContent className="relative p-8 z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary/80 rounded-2xl flex items-center justify-center mb-6 animate-float animation-delay-400 shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <Users className="text-white text-2xl" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-primary transition-colors duration-300">
                   Adultes
                 </h3>
                 <ul className="space-y-2 text-gray-600 mb-6">
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-primary mr-2" />
+                    <CheckCircle size={16} className="text-primary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Ergonomie au travail
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-primary mr-2" />
+                    <CheckCircle size={16} className="text-primary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Troubles musculo-squelettiques
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-primary mr-2" />
+                    <CheckCircle size={16} className="text-primary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Réadaptation fonctionnelle
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-primary mr-2" />
+                    <CheckCircle size={16} className="text-primary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Prévention des TMS
                   </li>
                 </ul>
                 <Link href="/services">
-                  <a className="text-primary font-medium hover:underline">
+                  <a className="inline-flex items-center text-primary font-semibold hover:text-primary/80 transition-colors duration-200 group-hover:translate-x-1">
                     En savoir plus →
                   </a>
                 </Link>
@@ -179,34 +183,36 @@ export default function HomePage() {
             </Card>
 
             {/* Senior Services */}
-            <Card className="bg-gradient-to-br from-secondary/10 to-secondary/5 hover:shadow-lg transition-all hover-lift animate-fade-in-up animation-delay-400">
-              <CardContent className="p-8">
-                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mb-6 animate-float animation-delay-800">
+            <Card className="group relative overflow-hidden bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover-lift animate-fade-in-up animation-delay-400">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+              <CardContent className="relative p-8 z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mb-6 animate-float animation-delay-800 shadow-lg group-hover:scale-110 transition-transform duration-300">
                   <Users className="text-white text-2xl" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-secondary transition-colors duration-300">
                   Seniors
                 </h3>
                 <ul className="space-y-2 text-gray-600 mb-6">
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-secondary mr-2" />
+                    <CheckCircle size={16} className="text-secondary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Maintien à domicile
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-secondary mr-2" />
+                    <CheckCircle size={16} className="text-secondary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Rééducation neurologique
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-secondary mr-2" />
+                    <CheckCircle size={16} className="text-secondary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Adaptation du logement
                   </li>
                   <li className="flex items-center">
-                    <CheckCircle size={16} className="text-secondary mr-2" />
+                    <CheckCircle size={16} className="text-secondary mr-3 group-hover:scale-110 transition-transform duration-200" />
                     Prévention des chutes
                   </li>
                 </ul>
                 <Link href="/services">
-                  <a className="text-secondary font-medium hover:underline">
+                  <a className="inline-flex items-center text-secondary font-semibold hover:text-secondary/80 transition-colors duration-200 group-hover:translate-x-1">
                     En savoir plus →
                   </a>
                 </Link>
