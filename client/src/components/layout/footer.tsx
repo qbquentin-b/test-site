@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { MapPin, Phone, Mail, Facebook } from "lucide-react";
-import Logo from "@/components/logo";
+import logoImage from "@assets/logo_1755781516931.jpg";
 
 export default function Footer() {
   return (
@@ -10,7 +10,21 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="mb-4">
-              <Logo size="small" />
+              <div className="flex items-center space-x-3">
+                <img 
+                  src={logoImage} 
+                  alt="Som'Ergo Logo" 
+                  className="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h1 className="text-lg font-bold text-primary">
+                    Som'Ergo
+                  </h1>
+                  <p className="text-sm text-gray-300">
+                    Cabinet d'Ergothérapie
+                  </p>
+                </div>
+              </div>
             </div>
             <p className="text-gray-300 text-sm">
               Accompagner chaque étape de la vie avec bienveillance. Notre

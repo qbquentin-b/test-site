@@ -72,7 +72,7 @@ export default function HomePage() {
               <img
                 src="https://physioextra.ca/wp-content/uploads/entete-ergo-ped-4-5-ans.png"
                 alt="Environnement thérapeutique chaleureux"
-                className="rounded-2xl shadow-2xl w-full h-auto hover-scale"
+                className="rounded-2xl shadow-2xl w-full h-[500px] object-cover hover-scale"
               />
               <Card className="absolute -bottom-6 -left-6 bg-white shadow-lg animate-scale-in animation-delay-800 hover-lift">
                 <CardContent className="p-6">
