@@ -70,7 +70,7 @@ export default function HomePage() {
             </div>
             <div className="relative animate-fade-in-right">
               <img
-                src="https://sdmntpritalynorth.oaiusercontent.com/files/00000000-5994-6246-a5de-ee5a0afb03fd/raw?se=2025-08-25T10%3A36%3A24Z&sp=r&sv=2024-08-04&sr=b&scid=55040477-4560-53e6-88ed-453b039a7c10&skoid=0a4a0f0c-99ac-4752-9d87-cfac036fa93f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-25T06%3A43%3A40Z&ske=2025-08-26T06%3A43%3A40Z&sks=b&skv=2024-08-04&sig=UZPaasETHZ2ojEwW1AhidaKPPkfXYHCN%2B6uTgZn2alc%3D"
+                src="https://physioextra.ca/wp-content/uploads/entete-ergo-ped-4-5-ans.png"
                 alt="Environnement thérapeutique chaleureux"
                 className="rounded-2xl shadow-2xl w-full h-auto hover-scale"
               />
